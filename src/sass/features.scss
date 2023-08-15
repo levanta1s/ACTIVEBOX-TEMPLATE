@@ -1,0 +1,310 @@
+@media (max-width: 767px){
+
+    .features-block {
+      padding: 0 20px 37px;
+      @include centering_in_column;
+    
+      &__item {
+        max-width: 280px;
+        position: relative;
+        padding-top: 103px;
+        margin-top: 49px;
+    
+        display: flex;
+        flex-direction: column;
+    
+        &:not(:first-child) {
+          margin-top: 52px;
+    
+        }
+    
+        &:nth-child(1)::before {
+          @include pseudo_element;
+    
+          width: 57px;
+          height: 57px;
+    
+          background: url(../icons/icon_1.svg) no-repeat center;
+          background-size: contain;
+    
+        }
+    
+        &:nth-child(2)::before {
+          @include pseudo_element;
+    
+          width: 65px;
+          height: 60px;
+    
+          background: url(../icons/icon_2.svg) no-repeat center;
+          background-size: contain;
+        }
+    
+        &:nth-child(3)::before {
+          @include pseudo_element;
+    
+          width: 49px;
+          height: 64px;
+    
+          background: url(../icons/icon_3.svg) no-repeat center;
+          background-size: contain;
+        }
+    
+        &:nth-child(4)::before {
+          @include pseudo_element;
+    
+          width: 59px;
+          height: 60px;
+    
+          background: url(../icons/icon_4.svg) no-repeat center;
+          background-size: contain;
+        }
+    
+        &:nth-child(5)::before {
+          @include pseudo_element;
+    
+          width: 59px;
+          height: 60px;
+    
+          background: url(../icons/icon_5.svg) no-repeat center;
+          background-size: contain;
+        }
+    
+        &:nth-child(6)::before {
+          @include pseudo_element;
+    
+          width: 66px;
+          height: 65px;
+    
+          background: url(../icons/icon_6.svg) no-repeat center;
+          background-size: contain;
+        }
+    
+      }
+    
+      &__header {
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+    
+        color: #2D3033;
+      }
+    
+      &__text {
+        margin-top: 8px;
+    
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    
+        color: #6C7279;
+      }
+    }
+    }
+    
+    @media (min-width: 768px) and (max-width: 1024px){
+    
+      .features-block {
+        padding: 87px 20px 80px;
+        @include centering_in_column;
+    
+        &__list{
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(246px, 1fr));
+          gap: 59px 21px;
+        }
+    
+        &__item {
+          position: relative;
+          padding-top: 119px;
+    
+          display: flex;
+          flex-direction: column;
+    
+          &:nth-child(1)::before {
+            @include pseudo_element;
+    
+            width: 65px;
+            height: 65px;
+    
+            background: url(../icons/icon_1.svg) no-repeat center;
+            background-size: contain;
+    
+          }
+    
+          &:nth-child(2)::before {
+            @include pseudo_element;
+    
+            width: 73px;
+            height: 68px;
+    
+            background: url(../icons/icon_2.svg) no-repeat center;
+            background-size: contain;
+          }
+    
+          &:nth-child(3)::before {
+            @include pseudo_element;
+    
+            width: 55px;
+            height: 71px;
+    
+            background: url(../icons/icon_3.svg) no-repeat center;
+            background-size: contain;
+          }
+    
+          &:nth-child(4)::before {
+            @include pseudo_element;
+    
+            width: 67px;
+            height: 65px;
+    
+            background: url(../icons/icon_4.svg) no-repeat center;
+            background-size: contain;
+          }
+    
+          &:nth-child(5)::before {
+            @include pseudo_element;
+    
+            width: 64px;
+            height: 68px;
+    
+            background: url(../icons/icon_5.svg) no-repeat center;
+            background-size: contain;
+          }
+    
+          &:nth-child(6)::before {
+            @include pseudo_element;
+    
+            width: 72px;
+            height: 65px;
+    
+            background: url(../icons/icon_6.svg) no-repeat center;
+            background-size: contain;
+          }
+    
+        }
+    
+        &__header {
+          font-weight: 900;
+          font-size: 18px;
+          line-height: 21px;
+          text-transform: uppercase;
+    
+          color: #2D3033;
+        }
+    
+        &__text {
+          margin-top: 24px;
+    
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+    
+          color: #6C7279;
+        }
+      }
+    }
+    
+    @media (min-width: 1025px){
+    
+      .features-block {
+        padding: 122px 156px 135px;
+        @include centering_in_column;
+    
+        &__list{
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(346px, 1fr));
+          gap: 100px 0px;
+        }
+    
+        &__item {
+          position: relative;
+          padding-top: 140px;
+    
+          display: flex;
+          flex-direction: column;
+    
+          &:nth-child(1)::before {
+            @include pseudo_element;
+    
+            width: 80px;
+            height: 78px;
+    
+            background: url(../icons/icon_1.svg) no-repeat center;
+            background-size: contain;
+    
+          }
+    
+          &:nth-child(2)::before {
+            @include pseudo_element;
+    
+            width: 85px;
+            height: 77px;
+    
+            background: url(../icons/icon_2.svg) no-repeat center;
+            background-size: contain;
+          }
+    
+          &:nth-child(3)::before {
+            @include pseudo_element;
+    
+            width: 64px;
+            height: 83px;
+    
+            background: url(../icons/icon_3.svg) no-repeat center;
+            background-size: contain;
+          }
+    
+          &:nth-child(4)::before {
+            @include pseudo_element;
+    
+            width: 79px;
+            height: 77px;
+    
+            background: url(../icons/icon_4.svg) no-repeat center;
+            background-size: contain;
+          }
+    
+          &:nth-child(5)::before {
+            @include pseudo_element;
+    
+            width: 74px;
+            height: 79px;
+    
+            background: url(../icons/icon_5.svg) no-repeat center;
+            background-size: contain;
+          }
+    
+          &:nth-child(6)::before {
+            @include pseudo_element;
+    
+            width: 86px;
+            height: 75px;
+    
+            background: url(../icons/icon_6.svg) no-repeat center;
+            background-size: contain;
+          }
+    
+        }
+    
+        &__header {
+          font-weight: 900;
+          font-size: 24px;
+          line-height: 28px;
+          text-transform: uppercase;
+    
+          color: #2D3033;
+        }
+    
+        &__text {
+          width: 92%;
+          margin: 42px 0 0 16px;
+    
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+    
+          color: #6C7279;
+        }
+      }
+    }

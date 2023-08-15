@@ -1,0 +1,110 @@
+@media (max-width: 767px) {
+
+  .download-block {
+    padding: 53px 20px 44px;
+
+    &__header {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+
+      color: #000000;
+    }
+
+    &__subheader {
+      margin-top: 22px;
+
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 15px;
+
+      text-transform: uppercase;
+
+      color: #000000;
+    }
+
+    & button {
+      width: 278.25px;
+      padding: 29px 10px;
+      margin-top: 13px;
+
+      font-size: 18px;
+      line-height: 21px;
+
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+  .download-block {
+    padding: 94px 20px 78px;
+
+    &__header {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+
+      color: #000000;
+    }
+
+    &__subheader {
+      margin-top: 22px;
+
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+
+      text-transform: uppercase;
+
+      color: #000000;
+    }
+
+    & button {
+      width: 313.15px;
+      margin-top: 45px;
+      padding: 28px 10px;
+
+      font-size: 18px;
+      line-height: 21px;
+
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+
+  .download-block {
+    padding: 134px 20px 114px;
+
+    &__header {
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 35px;
+
+      color: #000000;
+    }
+
+    &__subheader {
+      margin-top: 22px;
+
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+
+      text-transform: uppercase;
+
+      color: #000000;
+    }
+
+    & button {
+      width: 370px;
+      margin-top: 50px;
+      padding: 25px 10px;
+
+      font-size: 24px;
+      line-height: 28px;
+
+    }
+  }
+}

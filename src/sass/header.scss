@@ -1,0 +1,229 @@
+@media (max-width: 767px) {
+    .header-block {
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-block__nav {
+        cursor: pointer;
+    }
+
+    .header-block__hamburger:checked ~ .header-block__nav .header-block__links {
+        display: flex;
+    }
+
+    .header-block__links {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-block__item {
+        position: relative;
+        padding: 15px 9px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #FFFFFF;
+        transition-duration: 0.4s;
+    }
+
+    .header-block__item:hover::after,
+    .header-block__item:active::after {
+        position: absolute;
+        content: "";
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #E71414;
+    }
+
+    .header-block__item:active {
+        color: #E71414;
+        transition-duration: 0.4s;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+  .header-block {
+    max-width: 984px;
+    margin: 0 auto;
+    border-bottom: 1px solid #BABBC5;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__link{
+      padding: 38px 0 32px;
+    }
+
+    &__nav {
+      cursor: pointer;
+    }
+    &__hamburger{
+      display: none;
+    }
+    &__links{
+      margin-right: 11px;
+
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      column-gap: 29px;
+
+      list-style: none;
+    }
+
+
+    &__item{
+      position: relative;
+      padding: 41px 9px 41px;
+
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 14px;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      color: #FFFFFF;
+
+      transition-duration: 0.4s;
+    }
+
+    &__item:hover::after{
+      position: absolute;
+      content: "";
+
+      right: 0;
+      left: 0;
+      bottom: 0;
+
+      width: 100%;
+      height: 3px;
+      background-color: #BABBC5;
+    }
+
+    &__item:active::after{
+      position: absolute;
+      content: "";
+
+      right: 0;
+      left: 0;
+      bottom: 0;
+
+      width: 100%;
+      height: 3px;
+
+      background-color: #E71414;
+    }
+
+    &__item:active{
+      color:  #E71414;
+
+      transition-duration: 0.4s;
+    }
+  }
+
+}
+
+@media (min-width: 1025px){
+
+  .header-block {
+    max-width: 1170px;
+    margin: 0 auto;
+    border-bottom: 1px solid #BABBC5;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__link{
+      padding: 38px 0 32px;
+    }
+
+    &__nav {
+      cursor: pointer;
+    }
+    &__hamburger{
+      display: none;
+    }
+    &__links{
+      column-gap: 46px;
+      margin-right: 19px;
+
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      list-style: none;
+    }
+
+    &__item{
+      position: relative;
+      padding: 41px 9px 41px;
+
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 15px;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      color: #FFFFFF;
+
+      transition-duration: 0.4s;
+    }
+
+    &__item:hover::after{
+      position: absolute;
+      content: "";
+
+      right: 0;
+      left: 0;
+      bottom: 0;
+
+      width: 100%;
+      height: 3px;
+      background-color: #BABBC5;
+    }
+
+    &__item:active::after{
+      position: absolute;
+      content: "";
+
+      right: 0;
+      left: 0;
+      bottom: 0;
+
+      width: 100%;
+      height: 3px;
+
+      background-color: #E71414;
+    }
+
+    &__item:active{
+      color:  #E71414;
+
+      transition-duration: 0.4s;
+    }
+  }
+}

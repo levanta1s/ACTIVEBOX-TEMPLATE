@@ -1,0 +1,206 @@
+@media (max-width: 767px) {
+    .work-block {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(159px, 1fr));
+      gap: 1px;
+  
+      &__info {
+        //Выплывающая карточка
+        position: absolute;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+  
+        transition-duration: 0.2s;
+  
+        @include element_centering;
+      }
+  
+      &__header {
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+  
+        color: #FFFFFF;
+      }
+  
+      &__text {
+        margin-top: 8px;
+  
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+  
+        color: #FFFFFF;
+      }
+  
+      &__item {
+        position: relative;
+        height: 143px;
+  
+        cursor: pointer;
+  
+        &:hover .work-block__info {
+          //Наведение на картинку
+          height: 100%;
+          z-index: 2;
+  
+          background: rgba(255, 67, 67, 0.8);
+  
+          transition-duration: 0.4s;
+        }
+  
+        &:active .work-block__info {
+          //Наведение на картинку
+          height: 100%;
+          z-index: 2;
+  
+          background: rgba(185, 12, 12, 0.8);
+        }
+      }
+  
+      &__item > img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+  
+    .work-block {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(255.02px, 1fr));
+      gap: 1px;
+  
+      &__info {
+        //Выплывающая карточка
+        position: absolute;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+  
+        transition-duration: 0.2s;
+  
+        @include element_centering;
+      }
+  
+      &__header {
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+  
+        color: #FFFFFF;
+      }
+  
+      &__text {
+        margin-top: 8px;
+  
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+  
+        color: #FFFFFF;
+      }
+  
+      &__item {
+        position: relative;
+        height: 230.57px;
+  
+        cursor: pointer;
+  
+        &:hover .work-block__info {
+          //Наведение на картинку
+          height: 100%;
+          z-index: 2;
+  
+          background: rgba(255, 67, 67, 0.8);
+  
+          transition-duration: 0.4s;
+        }
+  
+        &:active .work-block__info {
+          //Наведение на картинку
+          height: 100%;
+          z-index: 2;
+  
+          background: rgba(185, 12, 12, 0.8);
+        }
+      }
+  
+      &__item > img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  
+  @media (min-width: 1025px) {
+  
+    .work-block {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px,376px));
+      gap: 1px;
+  
+      &__info {
+        position: absolute;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+  
+        transition-duration: 0.2s;
+  
+        @include element_centering;
+      }
+  
+      &__header {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+        text-transform: uppercase;
+  
+        color: #FFFFFF;
+      }
+  
+      &__text {
+        margin-top: 8px;
+  
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+  
+        color: #FFFFFF;
+      }
+  
+      &__item {
+        position: relative;
+        height: 339px;
+  
+        cursor: pointer;
+  
+        &:hover .work-block__info {
+          //Наведение на картинку
+          height: 100%;
+          z-index: 2;
+  
+          background: rgba(255, 67, 67, 0.8);
+  
+        }
+  
+        &:active .work-block__info {
+          //Наведение на картинку
+          height: 100%;
+          z-index: 2;
+  
+          background: rgba(185, 12, 12, 0.8);
+        }
+      }
+  
+      &__item > img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }

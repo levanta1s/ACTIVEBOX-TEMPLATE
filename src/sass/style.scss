@@ -1,0 +1,91 @@
+//Импорты
+@import "./mixins";
+@import "./header";
+@import "./banner";
+@import "./features";
+@import "./work";
+@import "./team";
+@import "./slider";
+@import "./download";
+@import "./footer";
+
+html {
+  box-sizing: border-box;
+
+  //Самый употреляемый шрифт
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+
+  color: #6C7279;
+}
+
+body {
+  max-width: 1510px;
+  margin: 0 auto;
+}
+
+*, *:after, *:before {
+  box-sizing: inherit;
+  word-break: break-word;
+
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper-background {
+  width: 100%;
+  background-size: cover;
+  background-image: url("../images/background-mob.jpg");
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 100%;
+    background-size: cover;
+    background-image: url("../images/background-tablet.jpg");
+  }
+  @media (min-width: 1025px) {
+    width: 100%;
+    background-size: cover;
+    background-image: url("../images/background-desktop.jpg");
+  }
+}
+
+
+.button {
+  width: 280px;
+  padding: 14px 5px;
+  border: none;
+
+  //Не указаны засечки для попадания в Perfect Pixel
+  font-family: 'Raleway';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 28px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  color: #FFFFFF;
+  background-color: #FF4343;
+
+  transition-duration: 0.4s;
+
+  &:hover {
+    background: #E71414;
+
+    transition-duration: 0.8s;
+  }
+
+  &:active {
+    background: #FF4343;
+    box-shadow: 4px 4px 30px #FF4343;
+
+    transition-duration: 0.2s;
+  }
+}
+
+
+
